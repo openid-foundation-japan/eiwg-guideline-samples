@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @application.name %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @application.client_id %>
+</p>
+
+<p>
+  <strong>Client secret:</strong>
+  <%= @application.client_secret %>
+</p>
+
+<p>
+  <strong>Redirect uri:</strong>
+  <%= @application.redirect_uri %>
+</p>
+
+<%= link_to 'Edit', edit_application_path(@application) %> |
+<%= link_to 'Back', applications_path %>

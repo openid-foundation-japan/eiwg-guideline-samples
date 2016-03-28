@@ -1,0 +1,26 @@
+[
+	{
+		"schemas": ["urn:ietf:params:scim:schemas:core:2.0:User"],
+		"id": "2819c223-7f76-453a-919d-413861904646",
+		"userName": "bjensen@example.com",
+		"password": "password",
+		"meta": {
+			"resourceType": "User",
+			"created": "2010-01-23T04:56:22Z",
+			"lastModified": "2011-05-13T04:42:34Z",
+			"location": "https://example.com/v2/Users/2819c223-7f76-453a-919d-413861904646"
+		}
+	},
+	{
+		"schemas": ["urn:ietf:params:scim:schemas:core:2.0:User"],
+		"id": "902c246b-6245-4190-8e05-00816be7344a",
+		"userName": "mpepperidge@example.com",
+		"password": "password",
+		"meta": {
+			"resourceType": "User",
+			"created": "2010-01-23T04:56:22Z",
+			"lastModified": "2011-05-13T04:42:34Z",
+			"location": "https://example.com/v2/Users/902c246b-6245-4190-8e05-00816be7344a"
+		}
+	}
+]

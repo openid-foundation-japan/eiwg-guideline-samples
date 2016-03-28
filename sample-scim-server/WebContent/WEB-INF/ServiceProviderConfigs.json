@@ -1,0 +1,47 @@
+{
+	"schemas": ["urn:ietf:params:scim:schemas:core:2.0:ServiceProviderConfig"],
+	"documentationUrl":"http://example.com/help/scim.html",
+	"patch": {
+		"supported":false
+	},
+	"bulk": {
+		"supported":false
+	},
+	"filter": {
+		"supported":true,
+		"maxResults": 200
+	},
+	"changePassword" : {
+		"supported":true
+	},
+	"sort": {
+		"supported":false
+	},
+	"etag": {
+		"supported":false
+	},
+	"authenticationSchemes": [
+		{
+			"name": "OAuth Bearer Token",
+			"description": "Authentication Scheme using the OAuth Bearer Token Standard",
+			"specUrl":"http://tools.ietf.org/html/draft-ietf-oauth-v2-bearer-01",
+			"documentationUrl":"http://example.com/help/oauth.html",
+			"type":"oauthbearertoken",
+			"primary": true
+		},
+		{
+			"name": "HTTP Basic",
+			"description": "Authentication Scheme using the Http Basic Standard",
+			"specUrl":"http://www.ietf.org/rfc/rfc2617.txt",
+			"documentationUrl":"http://example.com/help/httpBasic.html",
+			"type":"httpbasic"
+		}
+	],
+	"meta": {
+		"location":"%s/scim/ServiceProviderConfig",
+		"resourceType": "ServiceProviderConfig",
+		"created": "2010-01-23T04:56:22Z",
+		"lastModified": "2011-05-13T04:42:34Z"
+	}
+}
+

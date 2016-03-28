@@ -1,0 +1,10 @@
+<h1>OpenID Connect</h1>
+<%= link_to 'ログアウト', '/logout' %>
+<br>
+<br>
+
+<h3>こんにちは、<%= @user_name %> さん</h3>
+
+<pre>
+<%= JSON.pretty_generate(@scim) %>
+</pre>

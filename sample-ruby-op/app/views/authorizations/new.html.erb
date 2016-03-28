@@ -1,0 +1,32 @@
+<header class="page-header" role="banner">
+    <h1>Authorize required</h1>
+</header>
+
+<main role="main">
+    <p class="h4">
+    </p>
+
+    <% if @req.scopes %>
+        <div>
+            <p>This application will be able to:</p>
+
+            <ul>
+                <% @req.scopes.each do |scope| %>
+                    <li><%= t scope, scope: [ :scopes] %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <div class="actions">
+        <%= form_tag '/authorization', method: :post do %>
+            <%= hidden_field_tag :client_id, @req.client_id %>
+            <%= hidden_field_tag :redirect_uri, @req.redirect_uri %>
+            <%= hidden_field_tag :state, @req.state %>
+            <%= hidden_field_tag :response_type, @req.response_type %>
+            <%= hidden_field_tag :scope, @req.scope %>
+            <%= hidden_field_tag :nonce, @req.nonce %>
+            <%= submit_tag "Authorize", class: "btn btn-success btn-lg btn-block" %>
+        <% end %>
+    </div>
+</main>

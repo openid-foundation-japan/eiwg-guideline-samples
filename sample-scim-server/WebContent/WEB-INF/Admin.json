@@ -1,0 +1,11 @@
+[
+	{
+		"id": "admin",
+		"password": "password",
+		"bearer": "MDNhNTlhN2ItYmE1NC00OWQ3LWFkMzQtODliYjhhN2Q0Mjlh"
+	},
+	{
+		"id": "operator",
+		"password": "password"
+	}
+]

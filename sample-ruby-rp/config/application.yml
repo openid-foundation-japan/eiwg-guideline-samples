@@ -1,0 +1,21 @@
+defaults: &defaults
+  scim:
+    server: http://localhost:8000/
+    auth:
+      user: ham
+      password: spam
+  oidc:
+    corpA:
+      issuer: op.example.com
+      identifier: <%= ENV['CLIENT_ID'] %>
+      jwks_uri: http://localhost:3000/jwks
+      authorization_endpoint: http://localhost:3000/authorization
+      redirect_uri: <%= ENV['CALLBACK_URL'] %>
+    corpB:
+    corpC:
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults

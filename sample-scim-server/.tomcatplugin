@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcatProjectProperties>
+    <rootDir>/WebContent</rootDir>
+    <exportSource>false</exportSource>
+    <reloadable>true</reloadable>
+    <redirectLogger>false</redirectLogger>
+    <updateXml>true</updateXml>
+    <warLocation>C:\workspace\sample-scim-server\eiwg.war</warLocation>
+    <extraInfo></extraInfo>
+    <webPath>/eiwg</webPath>
+</tomcatProjectProperties>
